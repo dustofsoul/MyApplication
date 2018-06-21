@@ -27,8 +27,8 @@ public class MainActivity extends AppCompatActivity {
 
             @Override
             public void onClick(View v) {
-                Intent i = new Intent(mcontext,NoteMenuActivity.class);
-                startActivity(i);
+                //Intent i = new Intent(mcontext,NoteMenuActivity.class);
+                //startActivity(i);
             }
         });
         bt2=findViewById(R.id.bt2);
@@ -63,8 +63,8 @@ public class MainActivity extends AppCompatActivity {
 
             @Override
             public void onClick(View v) {
-                //Intent i = new Intent(mcontext,.class);
-                //startActivity(i);
+                Intent i = new Intent(mcontext,NoteMenuActivity.class);
+                startActivity(i);
             }
         });
         bt6=findViewById(R.id.bt6);
