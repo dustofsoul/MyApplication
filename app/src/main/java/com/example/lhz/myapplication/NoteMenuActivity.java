@@ -62,32 +62,4 @@ public class NoteMenuActivity extends Activity {
         });
     }
 
-    public boolean onKeyDown(int keyCode, KeyEvent event) {
-
-        if(keyCode == KeyEvent.KEYCODE_BACK ){
-            AlertDialog.Builder builder=new AlertDialog.Builder(this);
-            builder.setTitle("提示");
-            builder.setMessage("确定要退出程序?");
-            builder.setPositiveButton("确定", new DialogInterface.OnClickListener() {
-
-                @Override
-                public void onClick(DialogInterface dialog, int which) {
-                    dialog.dismiss();
-                    finish();
-                }
-            });
-            builder.setNeutralButton("取消", new DialogInterface.OnClickListener() {
-
-                @Override
-                public void onClick(DialogInterface dialog, int which) {
-                    dialog.dismiss();
-                }
-            });
-            builder.show();
-            return true;
-        }else{
-
-            return super.onKeyDown(keyCode, event);
-        }
-    }
 }

@@ -9,54 +9,64 @@
     android:layout_rowWeight="1"
     android:columnCount="2"
     android:gravity="center"
-    android:rowCount="4"
+    android:rowCount="5"
     tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_columnSpan="2"
+        android:layout_rowWeight="1"
+        android:gravity="center"
+        android:text="welcome" />
+
 
     <Button
         android:id="@+id/bt1"
         android:layout_columnWeight="1"
         android:layout_rowWeight="1"
-        android:text="记事本" />
+        android:text="计算器" />
 
     <Button
         android:id="@+id/bt2"
         android:layout_columnWeight="1"
         android:layout_rowWeight="1"
-        android:text="Button" />
+        android:text="实时天气" />
 
     <Button
         android:id="@+id/bt3"
         android:layout_columnWeight="1"
         android:layout_rowWeight="1"
-        android:text="Button" />
+        android:text="地图定位" />
 
     <Button
         android:id="@+id/bt4"
         android:layout_columnWeight="1"
         android:layout_rowWeight="1"
-        android:text="Button" />
+        android:text="英语学习" />
 
     <Button
         android:id="@+id/bt5"
         android:layout_columnWeight="1"
         android:layout_rowWeight="1"
-        android:text="Button" />
+        android:text="记事本" />
 
     <Button
         android:id="@+id/bt6"
         android:layout_columnWeight="1"
         android:layout_rowWeight="1"
-        android:text="Button" />
+        android:text="号码查询" />
 
     <Button
         android:id="@+id/bt7"
         android:layout_columnWeight="1"
         android:layout_rowWeight="1"
-        android:text="Button" />
+        android:text="2048" />
 
     <Button
         android:id="@+id/bt8"
         android:layout_columnWeight="1"
         android:layout_rowWeight="1"
-        android:text="Button" />
+        android:text="弹球游戏" />
 </GridLayout>
