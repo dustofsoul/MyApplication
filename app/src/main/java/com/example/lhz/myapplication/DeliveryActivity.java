@@ -1,5 +1,5 @@
 package com.example.lhz.myapplication;
-/*
+
 import android.app.ProgressDialog;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
@@ -112,4 +112,3 @@ public class DeliveryActivity extends AppCompatActivity implements DeliveryMessa
         });
     }
 }
-*/

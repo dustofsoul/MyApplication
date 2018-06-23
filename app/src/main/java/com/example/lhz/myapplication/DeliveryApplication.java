@@ -1,5 +1,5 @@
 package com.example.lhz.myapplication;
-/*
+
 import android.app.Application;
 import java.util.HashMap;
 import java.util.Map;
@@ -27,4 +27,3 @@ public class DeliveryApplication extends Application {
     }
 }
 
-*/

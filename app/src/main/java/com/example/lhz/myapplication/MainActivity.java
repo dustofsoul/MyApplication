@@ -52,7 +52,7 @@ public class MainActivity extends AppCompatActivity {
 
             @Override
             public void onClick(View v) {
-                Intent i = new Intent(mcontext,EnglishActivity.class);
+                Intent i = new Intent(mcontext,DeliveryActivity.class);
                 startActivity(i);
             }
         });

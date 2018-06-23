@@ -1,5 +1,5 @@
 package com.example.lhz.myapplication;
-/*
+
 import com.google.gson.Gson;
 
 import java.io.IOException;
@@ -73,4 +73,3 @@ public class DeliveryMessageGetter {
         });
     }
 }
-*/
