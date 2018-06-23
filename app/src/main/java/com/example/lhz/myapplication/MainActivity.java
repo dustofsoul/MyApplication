@@ -70,8 +70,8 @@ public class MainActivity extends AppCompatActivity {
 
             @Override
             public void onClick(View v) {
-                //Intent i = new Intent(mcontext,.class);
-                //startActivity(i);
+                Intent i = new Intent(mcontext,mobilephoneActivity.class);
+                startActivity(i);
             }
         });
         bt7=findViewById(R.id.bt7);

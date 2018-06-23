@@ -12,7 +12,7 @@ public class EnglishActivity extends AppCompatActivity{
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_english);
         webView = (WebView)findViewById(R.id.webview);
-        webView.loadUrl("http://fanyi.baidu.com/#en/zh/");
+        webView.loadUrl("https://translate.google.com");
         WebSettings webSettings = webView.getSettings();
         webSettings.setJavaScriptEnabled(true);
         webSettings.setAllowFileAccess(true);
