@@ -11,7 +11,7 @@ public class preActivity extends AppCompatActivity {
     Handler handler=new Handler(){
         public void handleMessage(Message msg) {
             if(msg.what==250){
-                Intent intent=new Intent(preActivity.this,MainActivity.class);
+                Intent intent=new Intent(preActivity.this,loginActivity.class);
                 startActivity(intent);
                 finish();
             }

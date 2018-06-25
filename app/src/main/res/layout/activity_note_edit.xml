@@ -50,7 +50,7 @@
             android:layout_alignParentLeft="true"
             android:layout_alignParentTop="true"
             android:layout_marginLeft="84dp"
-            android:background="#60000000"
+            android:background="@drawable/bt"
             android:text="@string/confirm" />
 
         <Button
@@ -60,7 +60,7 @@
             android:layout_alignParentTop="true"
             android:layout_marginLeft="38dp"
             android:layout_toRightOf="@+id/confirm"
-            android:background="#60000000"
+            android:background="@drawable/bt"
             android:text="@string/delet" />
 
     </RelativeLayout>

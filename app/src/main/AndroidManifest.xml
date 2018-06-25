@@ -25,9 +25,10 @@
         <activity android:name=".weatherActivity" />
         <activity android:name=".musicActivity" />
         <activity android:name=".pinballActivity" />
-        <activity android:name=".EnglishActivity" />
         <activity android:name=".mobilephoneActivity" />
-        <activity android:name=".DeliveryActivity"></activity>
+        <activity android:name=".DeliveryActivity" />
+        <activity android:name=".loginActivity" />
+        <activity android:name=".registActivity"></activity>
     </application>
 
 </manifest>
