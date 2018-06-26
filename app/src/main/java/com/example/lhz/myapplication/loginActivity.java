@@ -62,8 +62,8 @@ public class loginActivity extends AppCompatActivity {
             String password = edpassword.getText().toString();
             if (name.equals("") || password.equals("")) {
                 // 弹出消息框
-                new AlertDialog.Builder(loginActivity.this).setTitle("错误")
-                        .setMessage("帐号或密码不能空").setPositiveButton("确定", null)
+                new AlertDialog.Builder(loginActivity.this).setTitle("提示信息")
+                        .setMessage("帐号或密码不能为空").setPositiveButton("确定", null)
                         .show();
             } else {
                 isUserinfo(name, password);
@@ -76,13 +76,13 @@ public class loginActivity extends AppCompatActivity {
                 String str = "select * from tb_user where name=? and password=?";
                 Cursor cursor = db.rawQuery(str, new String[]{name, pwd});
                 if (cursor.getCount() <= 0) {
-                    new AlertDialog.Builder(loginActivity.this).setTitle("错误")
+                    new AlertDialog.Builder(loginActivity.this).setTitle("提示信息")
                             .setMessage("帐号或密码错误！").setPositiveButton("确定", null)
                             .show();
                     return false;
                 } else {
-                    new AlertDialog.Builder(loginActivity.this).setTitle("正确")
-                            .setMessage("成功登录").setPositiveButton("确定", null)
+                    new AlertDialog.Builder(loginActivity.this).setTitle("提示信息")
+                            .setMessage("登录成功！").setPositiveButton("确定", null)
                             .show();
                     Intent intent = new Intent(loginActivity.this, MainActivity.class);
                     startActivity(intent);

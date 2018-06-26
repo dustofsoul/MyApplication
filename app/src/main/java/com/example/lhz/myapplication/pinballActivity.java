@@ -30,14 +30,14 @@ public class pinballActivity extends Activity {
     //球拍的水平位置，垂直位置，宽度，高度
     private int racketx = rand.nextInt(200);//***每次进入游戏得到随机球拍初始位置
     private int rackety ;
-    private int RACKET_WIDTH = 200;
-    private int RACKET_HEIGHT = 30;
+    private int RACKET_WIDTH = 250;
+    private int RACKET_HEIGHT = 40;
     //球的大小，x和Y坐标
-    private int BALL_SIZE = 16;
+    private int BALL_SIZE = 30;
     private int ballx = rand.nextInt(200) + 20;//***每次进入游戏得到随机小球初始位置
     private int bally = rand.nextInt(10) + 20;//***
     //球的纵向速度,横向速度
-    private int yspeed = 40;
+    private int yspeed = 50;
     private int xspped = (int) (yspeed*xyRate*2); //***每次进入游戏得到一个随机的横向速度
     //游戏是否结束的标志
     private boolean isLose = false;
@@ -144,8 +144,8 @@ public class pinballActivity extends Activity {
     }
 
     class GameView extends View{
-        Paint paint = new Paint();
-
+        Paint paint1 = new Paint();
+        Paint paint2 = new Paint();
         public GameView(Context context) {
             super(context);
             setFocusable(true);
@@ -154,16 +154,17 @@ public class pinballActivity extends Activity {
         @Override
         protected void onDraw(Canvas canvas) {
             super.onDraw(canvas);
-            paint.setStyle(Paint.Style.FILL);
-            paint.setAntiAlias(true);
+            paint1.setStyle(Paint.Style.FILL);
+            paint1.setAntiAlias(true);
             if (isLose){
-                paint.setColor(Color.RED);
-                paint.setTextSize(40);
-                canvas.drawText("GAME OVER" , tablewidth/2-100 , 200 , paint);
+                paint1.setColor(Color.RED);
+                paint1.setTextSize(40);
+                canvas.drawText("GAME OVER" , tablewidth/2-100 , 200 , paint1);
             } else {
-                paint.setColor(Color.BLACK);
-                canvas.drawCircle(ballx , bally , BALL_SIZE , paint); //绘制小球
-                canvas.drawRect(racketx , rackety , racketx + RACKET_WIDTH , rackety + RACKET_HEIGHT , paint);//绘制球拍
+                paint1.setColor(Color.RED);
+                paint2.setColor(Color.BLUE);
+                canvas.drawCircle(ballx , bally , BALL_SIZE , paint1); //绘制小球
+                canvas.drawRect(racketx , rackety , racketx + RACKET_WIDTH , rackety + RACKET_HEIGHT , paint2);//绘制球拍
             }
 
         }

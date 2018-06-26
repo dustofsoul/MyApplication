@@ -25,56 +25,57 @@
     <Button
         android:id="@+id/bt1"
         android:layout_columnWeight="1"
-        android:layout_margin="20dp"
         android:layout_rowWeight="1"
-        android:text="计算器" />
+        android:text="计算器"
+        android:background="@drawable/bt"/>
 
     <Button
         android:id="@+id/bt2"
         android:layout_columnWeight="1"
-        android:layout_margin="20dp"
         android:layout_rowWeight="1"
-        android:text="实时天气" />
+        android:text="实时天气"
+        android:background="@drawable/bt"/>
 
     <Button
         android:id="@+id/bt3"
         android:layout_columnWeight="1"
-        android:layout_margin="20dp"
         android:layout_rowWeight="1"
-        android:text="音乐播放器" />
+        android:text="音乐播放器"
+        android:background="@drawable/bt"/>
+
 
     <Button
         android:id="@+id/bt4"
         android:layout_columnWeight="1"
-        android:layout_margin="20dp"
         android:layout_rowWeight="1"
-        android:text="英语学习" />
+        android:text="快递查询"
+        android:background="@drawable/bt"/>
 
     <Button
         android:id="@+id/bt5"
         android:layout_columnWeight="1"
-        android:layout_margin="20dp"
         android:layout_rowWeight="1"
-        android:text="记事本" />
+        android:text="记事本"
+        android:background="@drawable/bt"/>
 
     <Button
         android:id="@+id/bt6"
         android:layout_columnWeight="1"
         android:layout_rowWeight="1"
-        android:layout_margin="20dp"
-        android:text="号码查询" />
+        android:text="号码查询"
+        android:background="@drawable/bt"/>
 
     <Button
         android:id="@+id/bt7"
         android:layout_columnWeight="1"
         android:layout_rowWeight="1"
-        android:layout_margin="20dp"
-        android:text="2048" />
+        android:text="2048"
+        android:background="@drawable/bt"/>
 
     <Button
         android:id="@+id/bt8"
         android:layout_columnWeight="1"
         android:layout_rowWeight="1"
-        android:layout_margin="20dp"
-        android:text="弹球游戏" />
+        android:text="弹球游戏"
+        android:background="@drawable/bt"/>
 </GridLayout>

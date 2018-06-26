@@ -28,36 +28,44 @@
             android:layout_height="wrap_content">
 
             <Button
+                android:id="@+id/ac_btn"
                 android:layout_width="0dp"
-                android:layout_weight="1"
                 android:layout_height="70dp"
-                android:textSize="22sp"
+                android:layout_margin="5dp"
+                android:layout_weight="1"
+                android:background="@drawable/bt_ca"
                 android:text="AC"
-                android:id="@+id/ac_btn" />
+                android:textSize="22sp" />
 
             <Button
+                android:id="@+id/delete_btn"
                 android:layout_width="0dp"
-                android:layout_weight="1"
                 android:layout_height="70dp"
-                android:textSize="22sp"
+                android:layout_margin="5dp"
+                android:layout_weight="1"
+                android:background="@drawable/bt_ca"
                 android:text="Del"
-                android:id="@+id/delete_btn" />
+                android:textSize="22sp" />
 
             <Button
+                android:id="@+id/percent_btn"
                 android:layout_width="0dp"
-                android:layout_weight="1"
                 android:layout_height="70dp"
-                android:textSize="22sp"
+                android:layout_margin="5dp"
+                android:layout_weight="1"
+                android:background="@drawable/bt_ca"
                 android:text="%"
-                android:id="@+id/percent_btn" />
+                android:textSize="22sp" />
 
             <Button
+                android:id="@+id/divide_btn"
                 android:layout_width="0dp"
-                android:layout_weight="1"
                 android:layout_height="70dp"
-                android:textSize="22sp"
+                android:layout_margin="5dp"
+                android:layout_weight="1"
+                android:background="@drawable/bt_ca"
                 android:text="÷"
-                android:id="@+id/divide_btn" />
+                android:textSize="22sp" />
         </TableRow>
 
         <TableRow
@@ -65,36 +73,44 @@
             android:layout_height="wrap_content">
 
             <Button
+                android:id="@+id/num_seven"
                 android:layout_width="0dp"
-                android:layout_weight="1"
                 android:layout_height="70dp"
-                android:textSize="22sp"
+                android:layout_margin="5dp"
+                android:layout_weight="1"
+                android:background="@drawable/bt_ca"
                 android:text="7"
-                android:id="@+id/num_seven" />
+                android:textSize="22sp" />
 
             <Button
+                android:id="@+id/num_eight"
                 android:layout_width="0dp"
-                android:layout_weight="1"
                 android:layout_height="70dp"
-                android:textSize="22sp"
+                android:layout_margin="5dp"
+                android:layout_weight="1"
+                android:background="@drawable/bt_ca"
                 android:text="8"
-                android:id="@+id/num_eight" />
+                android:textSize="22sp" />
 
             <Button
+                android:id="@+id/num_nine"
                 android:layout_width="0dp"
-                android:layout_weight="1"
                 android:layout_height="70dp"
-                android:textSize="22sp"
+                android:layout_margin="5dp"
+                android:layout_weight="1"
+                android:background="@drawable/bt_ca"
                 android:text="9"
-                android:id="@+id/num_nine" />
+                android:textSize="22sp" />
 
             <Button
+                android:id="@+id/multiply_btn"
                 android:layout_width="0dp"
-                android:layout_weight="1"
                 android:layout_height="70dp"
-                android:textSize="22sp"
+                android:layout_margin="5dp"
+                android:layout_weight="1"
+                android:background="@drawable/bt_ca"
                 android:text="×"
-                android:id="@+id/multiply_btn" />
+                android:textSize="22sp" />
         </TableRow>
 
         <TableRow
@@ -102,36 +118,44 @@
             android:layout_height="wrap_content">
 
             <Button
+                android:id="@+id/num_four"
                 android:layout_width="0dp"
-                android:layout_weight="1"
                 android:layout_height="70dp"
-                android:textSize="22sp"
+                android:layout_margin="5dp"
+                android:layout_weight="1"
+                android:background="@drawable/bt_ca"
                 android:text="4"
-                android:id="@+id/num_four" />
+                android:textSize="22sp" />
 
             <Button
+                android:id="@+id/num_five"
                 android:layout_width="0dp"
-                android:layout_weight="1"
                 android:layout_height="70dp"
-                android:textSize="22sp"
+                android:layout_margin="5dp"
+                android:layout_weight="1"
+                android:background="@drawable/bt_ca"
                 android:text="5"
-                android:id="@+id/num_five" />
+                android:textSize="22sp" />
 
             <Button
+                android:id="@+id/num_six"
                 android:layout_width="0dp"
-                android:layout_weight="1"
                 android:layout_height="70dp"
-                android:textSize="22sp"
+                android:layout_margin="5dp"
+                android:layout_weight="1"
+                android:background="@drawable/bt_ca"
                 android:text="6"
-                android:id="@+id/num_six" />
+                android:textSize="22sp" />
 
             <Button
+                android:id="@+id/subtract_btn"
                 android:layout_width="0dp"
-                android:layout_weight="1"
                 android:layout_height="70dp"
-                android:textSize="22sp"
+                android:layout_margin="5dp"
+                android:layout_weight="1"
+                android:background="@drawable/bt_ca"
                 android:text="-"
-                android:id="@+id/subtract_btn" />
+                android:textSize="22sp" />
         </TableRow>
 
         <TableRow
@@ -139,36 +163,44 @@
             android:layout_height="wrap_content">
 
             <Button
+                android:id="@+id/num_one"
                 android:layout_width="0dp"
-                android:layout_weight="1"
                 android:layout_height="70dp"
-                android:textSize="22sp"
+                android:layout_margin="5dp"
+                android:layout_weight="1"
+                android:background="@drawable/bt_ca"
                 android:text="1"
-                android:id="@+id/num_one" />
+                android:textSize="22sp" />
 
             <Button
+                android:id="@+id/num_two"
                 android:layout_width="0dp"
-                android:layout_weight="1"
                 android:layout_height="70dp"
-                android:textSize="22sp"
+                android:layout_margin="5dp"
+                android:layout_weight="1"
+                android:background="@drawable/bt_ca"
                 android:text="2"
-                android:id="@+id/num_two" />
+                android:textSize="22sp" />
 
             <Button
+                android:id="@+id/num_three"
                 android:layout_width="0dp"
-                android:layout_weight="1"
                 android:layout_height="70dp"
-                android:textSize="22sp"
+                android:layout_margin="5dp"
+                android:layout_weight="1"
+                android:background="@drawable/bt_ca"
                 android:text="3"
-                android:id="@+id/num_three" />
+                android:textSize="22sp" />
 
             <Button
+                android:id="@+id/plus_btn"
                 android:layout_width="0dp"
-                android:layout_weight="1"
                 android:layout_height="70dp"
-                android:textSize="22sp"
+                android:layout_margin="5dp"
+                android:layout_weight="1"
+                android:background="@drawable/bt_ca"
                 android:text="+"
-                android:id="@+id/plus_btn" />
+                android:textSize="22sp" />
         </TableRow>
 
         <TableRow
@@ -176,28 +208,34 @@
             android:layout_height="wrap_content">
 
             <Button
+                android:id="@+id/num_zero"
                 android:layout_width="0dp"
+                android:layout_height="70dp"
+                android:layout_margin="5dp"
                 android:layout_weight="2"
-                android:layout_height="70dp"
-                android:textSize="22sp"
+                android:background="@drawable/bt_ca"
                 android:text="0"
-                android:id="@+id/num_zero" />
+                android:textSize="22sp" />
 
             <Button
+                android:id="@+id/dot_btn"
                 android:layout_width="0dp"
-                android:layout_weight="1"
                 android:layout_height="70dp"
-                android:textSize="22sp"
+                android:layout_margin="5dp"
+                android:layout_weight="1"
+                android:background="@drawable/bt_ca"
                 android:text="."
-                android:id="@+id/dot_btn" />
+                android:textSize="22sp" />
 
             <Button
+                android:id="@+id/equal_btn"
                 android:layout_width="0dp"
-                android:layout_weight="1"
                 android:layout_height="70dp"
-                android:textSize="22sp"
+                android:layout_margin="5dp"
+                android:layout_weight="1"
+                android:background="@drawable/bt_ca"
                 android:text="="
-                android:id="@+id/equal_btn" />
+                android:textSize="22sp" />
         </TableRow>
 
     </TableLayout>

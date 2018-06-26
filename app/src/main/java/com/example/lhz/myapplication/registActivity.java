@@ -57,17 +57,17 @@ public class registActivity extends Activity {
                             }
                         };
                         new AlertDialog.Builder(registActivity.this)
-                                .setTitle("注册成功").setMessage("注册成功")
+                                .setTitle("提示信息").setMessage("注册成功")
                                 .setPositiveButton("确定", ss).show();
 
                     } else {
                         new AlertDialog.Builder(registActivity.this)
-                                .setTitle("注册失败").setMessage("注册失败")
+                                .setTitle("提示信息").setMessage("注册失败")
                                 .setPositiveButton("确定", null);
                     }
                 } else {
                     new AlertDialog.Builder(registActivity.this)
-                            .setTitle("帐号密码不能为空").setMessage("帐号密码不能为空")
+                            .setTitle("提示信息").setMessage("帐号密码不能为空")
                             .setPositiveButton("确定", null);
                 }
 
