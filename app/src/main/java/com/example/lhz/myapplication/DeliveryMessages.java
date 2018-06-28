@@ -4,22 +4,11 @@ import java.util.List;
 
 
 public class DeliveryMessages {
-    //派送单号
     private String nu;
-
-    //快递公司名称
     private String com;
-
-    //快递信息
     private List<Message> data;
-
-    //消息类
     public static class Message {
-
-        //时间，格式为年-月-日 时:分:秒
         private String time;
-
-        //详细信息内容
         private String context;
 
         public String getTime() {

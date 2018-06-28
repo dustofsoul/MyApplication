@@ -42,19 +42,16 @@ public class DeliveryActivity extends AppCompatActivity implements DeliveryMessa
             @Override
             public void onClick(View v) {
 
-                //没有输入快递单号
                 if (0 == mDeliveryNoEditText.getText().length()) {
                     Toast.makeText(DeliveryActivity.this, "请输入快递单号", Toast.LENGTH_SHORT).show();
                     return;
                 }
 
-                //创建ProgressDialog对象
                 mQueryWaitDialog = new ProgressDialog(DeliveryActivity.this);
                 mQueryWaitDialog.setProgressStyle(ProgressDialog.STYLE_SPINNER);
                 mQueryWaitDialog.setMessage("正在查询...");
                 mQueryWaitDialog.show();
 
-                //准备请求参数
                 int selectedPosition = mDeliveryCompanySpinner.getSelectedItemPosition();
                 String deliveryCompanyName =
                         getResources().getStringArray(R.array.delivery_company)[selectedPosition];
@@ -63,10 +60,8 @@ public class DeliveryActivity extends AppCompatActivity implements DeliveryMessa
                         ((DeliveryApplication)getApplication()).getDeliveryCompanyNo(deliveryCompanyName));
                 params.put("postid", mDeliveryNoEditText.getText().toString());
 
-                //清空数据
                 mQueryData.clear();
 
-                //发送请求
                 DeliveryMessageGetter getter = new DeliveryMessageGetter();
                 getter.getAsync(getResources().getString(R.string.query_url),
                         params, DeliveryActivity.this);

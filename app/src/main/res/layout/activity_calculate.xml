@@ -33,8 +33,9 @@
                 android:layout_height="70dp"
                 android:layout_margin="5dp"
                 android:layout_weight="1"
-                android:background="@drawable/bt_ca"
+                android:background="@drawable/bt_ca_ac"
                 android:text="AC"
+                android:textColor="@color/white"
                 android:textSize="22sp" />
 
             <Button
@@ -233,7 +234,7 @@
                 android:layout_height="70dp"
                 android:layout_margin="5dp"
                 android:layout_weight="1"
-                android:background="@drawable/bt_ca"
+                android:background="@drawable/bt_ca_eq"
                 android:text="="
                 android:textSize="22sp" />
         </TableRow>

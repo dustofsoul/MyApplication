@@ -27,13 +27,15 @@ public class musicActivity extends Activity implements OnClickListener {
     private Button next;
     private Button last;
     private MediaPlayer player;
+    private boolean isPlay;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_music);
         initView();
-        player=MediaPlayer.create(this, R.raw.celebration);//初始化音乐播放器
-        seekBar.setMax(player.getDuration());//设最大值
+        isPlay=false;
+        player=MediaPlayer.create(this, R.raw.celebration);
+        seekBar.setMax(player.getDuration());
         seekBar.setOnSeekBarChangeListener(new OnSeekBarChangeListener() {
 
             @Override
@@ -79,14 +81,14 @@ public class musicActivity extends Activity implements OnClickListener {
     @Override
     public void onClick(View v) {
         // TODO Auto-generated method stub
-        int id=v.getId();//点击按钮的id
+        int id=v.getId();
         switch (id) {
             case R.id.meun:
 
                 break;
             case R.id.stop:
                 player.start();
-                handler.post(run);//开启
+                handler.post(run);
                 break;
             case R.id.swit:
                 player.stop();
@@ -126,13 +128,13 @@ public class musicActivity extends Activity implements OnClickListener {
         startTime.setText(second/60+":"+second%60);
         countTime.setText(csecond/60+":"+csecond%60);
     }
-    @Override   //按键监听事件  keyCode是按下键的编码
+    @Override
     public boolean onKeyDown(int keyCode, KeyEvent event) {
         // TODO Auto-generated method stub
         if(keyCode==KeyEvent.KEYCODE_BACK){
             player.stop();
-            player.release();//释放资源
-            handler.removeCallbacks(run);//线程移除
+            player.release();
+            handler.removeCallbacks(run);
             finish();		}
         return super.onKeyDown(keyCode, event);
     }

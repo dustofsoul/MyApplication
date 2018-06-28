@@ -60,7 +60,6 @@ public class weatherActivity extends Activity {
                 InputStream inputStream = null;
                 if (httpURLConnection.getResponseCode() == 200) {
                     inputStream = httpURLConnection.getInputStream();
-                    //检测网络异常
                 } else {
                     return "11";
                 }

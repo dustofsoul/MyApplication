@@ -47,13 +47,10 @@ public class registActivity extends Activity {
                             public void onClick(DialogInterface dialog,
                                                 int which) {
                                 // TODO Auto-generated method stub
-                                // 跳转到登录界面
                                 Intent in = new Intent();
                                 in.setClass(registActivity.this,
                                         loginActivity.class);
                                 startActivity(in);
-                                // 销毁当前activity
-                                //  registActivity.this.onDestroy();
                             }
                         };
                         new AlertDialog.Builder(registActivity.this)

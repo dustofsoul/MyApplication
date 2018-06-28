@@ -1,7 +1,9 @@
 package com.example.lhz.myapplication;
 
 import android.app.AlertDialog;
+import android.content.Context;
 import android.content.Intent;
+import android.content.SharedPreferences;
 import android.database.Cursor;
 import android.database.sqlite.SQLiteDatabase;
 import android.database.sqlite.SQLiteException;
@@ -18,7 +20,6 @@ public class loginActivity extends AppCompatActivity {
     private EditText edpassword;
     private Button btregister;
     private Button btlogin;
-    // 创建SQLite数据库
     public static SQLiteDatabase db;
 
     @Override
@@ -31,7 +32,7 @@ public class loginActivity extends AppCompatActivity {
         btlogin = (Button) findViewById(R.id.btlogin);
         db = SQLiteDatabase.openOrCreateDatabase(loginActivity.this.getFilesDir().toString()
                 + "/test.dbs", null);
-        // 跳转到注册界面
+
         btregister.setOnClickListener(new OnClickListener() {
 
             @Override
@@ -61,16 +62,17 @@ public class loginActivity extends AppCompatActivity {
             String name = edname.getText().toString();
             String password = edpassword.getText().toString();
             if (name.equals("") || password.equals("")) {
-                // 弹出消息框
+
                 new AlertDialog.Builder(loginActivity.this).setTitle("提示信息")
                         .setMessage("帐号或密码不能为空").setPositiveButton("确定", null)
                         .show();
             } else {
-                isUserinfo(name, password);
+                if(isUserinfo(name, password))
+                    finish();
             }
         }
 
-        // 判断输入的用户是否正确
+
         public Boolean isUserinfo(String name, String pwd) {
             try {
                 String str = "select * from tb_user where name=? and password=?";
@@ -97,7 +99,6 @@ public class loginActivity extends AppCompatActivity {
 
     }
 
-    // 创建数据库和用户表
     public void createDb() {
         db.execSQL("create table tb_user( name varchar(30) primary key,password varchar(30))");
     }

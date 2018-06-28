@@ -12,19 +12,22 @@
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
+        android:layout_gravity="center"
         android:orientation="vertical">
 
         <TextView
             android:id="@+id/android:empty"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="您还没有开始写日记呢!点击下边的Menu按钮开始写日记吧:)" />
+            android:text="您还没有记过笔记，点击下边按钮开始记笔记吧:)"
+            android:textSize="24sp" />
 
         <Button
             android:id="@+id/menu"
-            android:layout_width="wrap_content"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="menu" />
+            android:background="@drawable/bt"
+            android:text="记笔记" />
 
     </LinearLayout>
 </LinearLayout>

@@ -19,19 +19,16 @@ public class DeliveryMessageGetter {
         void onFailure(String errorStr);
     }
 
-    //okHttp
     private OkHttpClient mOkHttpClient = new OkHttpClient.Builder()
             .readTimeout(10, TimeUnit.SECONDS)
             .writeTimeout(10, TimeUnit.SECONDS)
             .connectTimeout(10, TimeUnit.SECONDS)
             .build();
 
-    //异步GET请求
     public void getAsync(final String url,
                          final Map<String, String> params,
                          final DeliveryMessageGetterListener listener) {
 
-        //构建请求URL
         String requestString = url;
         if (!params.isEmpty()) {
             requestString += "?";
@@ -41,12 +38,10 @@ public class DeliveryMessageGetter {
             requestString = requestString.substring(0, requestString.length() - 1);
         }
 
-        //创建一个Request
         final Request request = new Request.Builder()
                 .url(requestString)
                 .build();
 
-        //请求加入调度
         Call call = mOkHttpClient.newCall(request);
         call.enqueue(new Callback() {
             @Override
