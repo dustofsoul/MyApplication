@@ -2,8 +2,9 @@ package com.example.lhz.myapplication;
 
 import android.app.ProgressDialog;
 import android.os.Bundle;
-import android.support.v7.app.AppCompatActivity;
+import android.app.Activity;
 import android.view.View;
+import android.view.WindowManager;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.ListView;
@@ -18,7 +19,7 @@ import java.util.Map;
 
 import static com.example.lhz.myapplication.DeliveryMessages.Message;
 
-public class DeliveryActivity extends AppCompatActivity implements DeliveryMessageGetter.DeliveryMessageGetterListener {
+public class DeliveryActivity extends Activity implements DeliveryMessageGetter.DeliveryMessageGetterListener {
 
     private List<Map<String, String>> mQueryData = new ArrayList<>();
     private SimpleAdapter mQueryAdapter;
@@ -31,8 +32,9 @@ public class DeliveryActivity extends AppCompatActivity implements DeliveryMessa
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_delivery);
 
+        setContentView(R.layout.activity_delivery);
+        getWindow().setSoftInputMode(WindowManager.LayoutParams.SOFT_INPUT_ADJUST_PAN);
         mDeliveryCompanySpinner = (Spinner) findViewById(R.id.delivery_company_spinner);
         mDeliveryNoEditText = (EditText) findViewById(R.id.delivery_no_edit_text);
         Button queryButton = (Button) findViewById(R.id.query_button);

@@ -1,12 +1,11 @@
 package com.example.lhz.myapplication;
 
-import android.support.v7.app.AppCompatActivity;
-import android.support.v7.*;
+import android.app.Activity;
 import android.os.Bundle;
 import android.webkit.WebSettings;
 import android.webkit.WebView;
 
-public class Activity2048 extends AppCompatActivity{
+public class Activity2048 extends Activity{
     private WebView webView;
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);

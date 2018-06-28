@@ -23,9 +23,13 @@ import java.net.URL;
 public class weatherActivity extends Activity {
     private EditText editText;
     private Button button;
-    private TextView tv_tianqi;
-    private TextView tv_wendu;
-    private TextView tv_fengli;
+    private TextView tq_tianqi;
+    private TextView tq_wendu;
+    private TextView tq_fengli;
+    private TextView tq_fengsu;
+    private TextView tq_shidu;
+    private TextView tq_visable;
+    private TextView tq_cloud;
     private String API = "https://free-api.heweather.com/s6/weather/now?key=2ab935ee123b49c0be54bf1fbd8ddebb&location=";
 
     @Override
@@ -34,10 +38,13 @@ public class weatherActivity extends Activity {
         setContentView(R.layout.activity_weather);
         editText =( EditText)findViewById(R.id.main_editView);
         button = (Button)findViewById(R.id.main_button);
-        tv_tianqi = (TextView)findViewById(R.id.main_tianqi);
-        tv_fengli = (TextView)findViewById(R.id.main_fengli);
-        tv_wendu = (TextView)findViewById(R.id.main_wendu);
-
+        tq_tianqi = (TextView)findViewById(R.id.main_tianqi);
+        tq_fengli = (TextView)findViewById(R.id.main_fengli);
+        tq_wendu = (TextView)findViewById(R.id.main_wendu);
+        tq_fengsu = (TextView)findViewById(R.id.main_fengsu);
+        tq_shidu = (TextView)findViewById(R.id.main_shidu);
+        tq_visable = (TextView)findViewById(R.id.main_visable);
+        tq_cloud = (TextView)findViewById(R.id.main_cloud);
         button.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
@@ -60,6 +67,7 @@ public class weatherActivity extends Activity {
                 InputStream inputStream = null;
                 if (httpURLConnection.getResponseCode() == 200) {
                     inputStream = httpURLConnection.getInputStream();
+                    //检测网络异常
                 } else {
                     return "11";
                 }
@@ -98,10 +106,17 @@ public class weatherActivity extends Activity {
                 String wendu = now.getString("tmp");
                 String fengli = now.getString("wind_dir");
                 String qiangdu = now.getString("wind_sc");
-                tv_tianqi.setText("今天是" + "“" + tianqi + "”" );
-                tv_wendu.setText(wendu + "℃");
-                tv_fengli.setText(fengli + qiangdu + "级");
-
+                String fengsu= now.getString("wind_spd");
+                String shidu= now.getString("hum");
+                String visable= now.getString("vis");
+                String cloud= now.getString("cloud");
+                tq_tianqi.setText(city );
+                tq_wendu.setText(wendu + "℃");
+                tq_fengli.setText(fengli + qiangdu + "级");
+                tq_fengsu.setText(fengsu+"公里/小时");
+                tq_shidu.setText(shidu+"%");
+                tq_visable.setText(visable+"公里");
+                tq_cloud.setText(cloud+"%");
             } catch (JSONException e) {
                 e.printStackTrace();
             }
@@ -110,4 +125,3 @@ public class weatherActivity extends Activity {
 
     }
 }
-

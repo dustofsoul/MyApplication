@@ -19,7 +19,7 @@
         android:gravity="center"
         android:text="欢迎使用"
         android:textColor="#ffffff"
-    android:textSize="30sp" />
+        android:textSize="30sp" />
 
 
     <Button
@@ -45,9 +45,9 @@
         android:layout_columnWeight="1"
         android:layout_rowWeight="1"
         android:background="@drawable/bt"
-        android:text="音乐播放器"
+        android:text="音乐播放"
         android:textColor="#ffffff"
-        android:textSize="30sp"/>
+        android:textSize="30sp" />
 
 
     <Button
@@ -57,7 +57,7 @@
         android:background="@drawable/bt"
         android:text="快递查询"
         android:textColor="#ffffff"
-        android:textSize="30sp"/>
+        android:textSize="30sp" />
 
     <Button
         android:id="@+id/bt5"
